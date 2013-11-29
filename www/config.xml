@@ -2,7 +2,7 @@
 <widget id="com.smewebsites.nuitblanche" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>99RedBeaconsTracker</name>
     <description>
-        99 Red Beacons Tracker is the application that goes alongside the artwork "99 Red Beacons" for Nuit Blanche Ottawa + Gatineau. 
+        99 Red Beacons Tracker is the application that goes alongside the artwork "99 Red Beacons" for Nuit Blanche Ottawa + Gatineau.
 
 99 flashing red balloons tour the city, each one with a morse code message of a member of the Canadian Armed Forces. Inspired by the Cold War song 99 Luftballons, "99 Red Beacons" deals with the themes of invisible communication &amp; military influence. This is the application that tracks the participants of the artwork during the night to be displayed at SAW Gallery. This application was made possible because of the generosity of Nuit Blanche Ottawa + Gatineau and SAW Gallery.
     </description>
@@ -26,8 +26,8 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
-	
-	<!-- These values are ignored by local phonegap builds -->	
+
+	<!-- These values are ignored by local phonegap builds -->
     <icon src="icon.png" />
     <icon gap:density="ldpi" gap:platform="android" src="res/icon/android/icon-36-ldpi.png" />
     <icon gap:density="mdpi" gap:platform="android" src="res/icon/android/icon-48-mdpi.png" />
@@ -42,14 +42,14 @@
     <icon gap:platform="webos" src="res/icon/webos/icon-64.png" />
     <icon gap:platform="winphone" src="res/icon/windows-phone/icon-48.png" />
     <icon gap:platform="winphone" gap:role="background" src="res/icon/windows-phone/icon-173.png" />
-	
+
     <gap:splash gap:density="ldpi" gap:platform="android" src="res/screen/android/screen-ldpi-portrait.png" />
     <gap:splash gap:density="mdpi" gap:platform="android" src="res/screen/android/screen-mdpi-portrait.png" />
     <gap:splash gap:density="hdpi" gap:platform="android" src="res/screen/android/screen-hdpi-portrait.png" />
     <gap:splash gap:density="xhdpi" gap:platform="android" src="res/screen/android/screen-xhdpi-portrait.png" />
-	
+
     <gap:splash gap:platform="blackberry" src="res/screen/blackberry/screen-225.png" />
-	
+
     <gap:splash gap:platform="ios" height="480" src="res/screen/ios/Default.png" width="320" />
     <gap:splash gap:platform="ios" height="960" src="res/screen/ios/Default@2x.png" width="640" />
     <gap:splash gap:platform="ios" height="1004" src="res/screen/ios/Default-Portrait~ipad.png" width="768" /> <!-- used to be height 1024, but 1004 is actual requirment -->
@@ -59,8 +59,14 @@
 	<!-- Retina iPads: Requires PhoneGap 2.5.0 or higher -->
 	<gap:splash src="res/screen/ios/Default-Portrait~ipad.png" gap:platform="ios" width="1536" height="2008" /><!-- Portrait -->
 	<gap:splash src="res/screen/ios/Default-Portrait~ipad.png" gap:platform="ios" width="2048" height="1496" /><!-- Landscape -->
-		
-	
+
+
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
+
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+
     <access origin="*" />
 </widget>
