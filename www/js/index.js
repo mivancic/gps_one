@@ -7,10 +7,10 @@
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied. 
+ * KIND, either express or implied.
  */
 var app = {
-	SERVER_URL : "http://artengine.ca/nnrbeacons/submit.php",
+	SERVER_URL : "http://beta.samstonije.com/submit.php",
 	HIGH_GPS_ACCURACY : false,	// some emulators require true.
 
 	position : null,
@@ -27,7 +27,7 @@ var app = {
 		this.initUserId();
 		this.initPasscode();
 		this.initView();
-		app.timeLastSubmit = (new Date().getTime() / 1000) - 60; 
+		app.timeLastSubmit = (new Date().getTime() / 1000) - 60;
 	},
 	bindEvents : function() {
 		document.addEventListener('deviceready', this.onDeviceReady, false);
